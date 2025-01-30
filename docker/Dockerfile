@@ -9,7 +9,7 @@ COPY ./template/*.sh /scripts/template/
 RUN chmod +x /scripts/*.sh
 RUN chmod +x /scripts/template/*.sh
 RUN chmod +x /app/run.sh
-WORKDIR styles/output
+WORKDIR /output/styles
 CMD ["bash", "/app/run.sh"]
 
 
