@@ -8,3 +8,4 @@ volumes:
   - ./src/app:/output/components/Page/
   - ./src/app:/output/components/Layout/
 ```
+Версия создающая только nullstyle.css и globals.css - https://hub.docker.com/repository/docker/jjmynn/css-template/general
