@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  css-test:
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+    volumes:
+      - ./src/styles:/scripts/styles/output/
+      - ./src/components/ui/Container:/scripts/components/Container/output/
+      - ./src/components/ui/Wrapper:/scripts/components/Wrapper/output/
+      - ./src/components/views/Main:/scripts/components/Main/output/
+      - ./src/app:/scripts/components/Page/output/
+      - ./src/app:/scripts/components/Layout/output/
